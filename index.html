@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Living Galapagos</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/foundation.css">
+	<link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/dimlights.css">
+	<link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/app.css">
+    <link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/font_style.css">
+    <link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/tinybox_style.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  <link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/styles.css" />
+  <script src="http://reinhardt.jomc.unc.edu/static/js/jquery.min.js"></script>
+  <script src="http://reinhardt.jomc.unc.edu/static/js/dimlights.js"></script>
+  <script src="http://reinhardt.jomc.unc.edu/static/js/jquery.videobackground.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script> 
+  <script src="http://d3js.org/d3.v2.min.js " type="text/javascript"></script>  
+  <script src="http://reinhardt.jomc.unc.edu/static/js/dylancode.js"></script>
+  <script src="http://reinhardt.jomc.unc.edu/static/js/tinybox.js"></script>
+  
+<!--   <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>    -->
+  	<script>
+			$(document).ready(function() {
+				$('dl').toggle();
+				$('h2').bind('click', function(event) {
+					event.preventDefault();
+					$(this).next('dl').slideToggle(500, function() {
+						$('.video-bg-controls').videobackground('resize');
+					});
+				});
+				$('body').prepend('<div class="video-background"></div>');
+				$('.video-background').videobackground({
+					videoSource: ['',
+						''], 
+					controlPosition: '.video-background',
+					poster: '',
+					loop: 'false', 
+					resize: 'true',
+					loadedCallback: function() {
+						$(this).videobackground('mute', {controlPosition: '.video-background'});
+					}
+				});
+			});
+		</script>
+</head>
+<body>
+<div class="container"> <!-- container -->
+
+		<div class="row" id="header"> <!------------LOGO AND NAV------------>
+        	<div class="twelve columns phone-four">
+            	<ul id="header-ul">
+                	<li id="logo-li">
+						<div class="logo-background"/>
+                		<div class="logo"><a href="/en"><img src="http://reinhardt.jomc.unc.edu/static/images/logo.png"/></a></div>
+               		</li>
+                	<li id="top-nav-li">
+                    	<ul class="topNav">
+							
+                            <!--<li><a href="en/credits/">CREDITS</a></li>-->
+                           
+                            <li><a href="/en/">ENGLISH</a></li>
+                            <li><a href="/es/">SPANISH</a></li>
+                            <li><a href="/en/about/">ABOUT</a></li>
+                            
+                            <li style="border:none;"><a href="http://livinggalapagos.org/blog">BLOG</a></li>  
+                        </ul>
+                    </li>
+                	<li id="top-cream-bar"></li>
+                </ul>
+            </div>
+        </div> <!-- ////END LOGO AND NAV -->
+
+    	<div class="row" id="vidrow"><!-- video player row -->
+        	<div class="twelve columns phone-four" id="video-row" style="z-index: 10;">
+            
+            	<div class="row"><!-- Creates row so nav/icon div doesn't go over cream color -->
+                	<div class="twelve columns phone-four" id="vidrow2">
+                    
+                    	<div class="row hide-on-phones"> <!------------ICON DIV------------>
+                			<div class="twelve columns" id="icons-div">
+                                <ul>
+                                   
+                                    <li class="icon" id="icon-cat1">
+                                   	</li>
+                                    <li class="icon" id="icon-cat2">
+                                   	</li>
+                                   	
+                                    <li class="icon" id="icon-search">
+                                    	<a href="/search">
+                                    		<div style="height: 50px; width: 50px;"></div>
+                                    	</a>
+                                   	</li>
+                               </ul>
+                             </div>
+               			 </div> <!-- ////END ICON DIV -->
+                         
+                    	<div class="row hide-on-phones"> <!------------SIDEBAR DIV------------>
+
+                			<div id="sidebar-div">
+                            	<div id="slidemenu">
+                                <div class="scroll" id="scroll-cat1">
+                                    	SEA<br>
+                                        
+                                          
+										    The Captain
+											  <a href="/en/captain/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/05/08/captain_ab_still_13b.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+										    Face to Face
+											  <a href="/en/face-face/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/04/17/thumbnail_1.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+										    Turning to Tourism
+											  <a href="/en/turning-tourism/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/04/19/thumbnail_dive.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+										    On The Path Of Light
+											  <a href="/en/path-light/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/04/18/Chance_surf_thumb.png" style="max-width:100%"/></a>
+										  
+										
+                                    </div>
+                                    
+                                    <div class="scroll" id="scroll-cat2">
+
+                                    	LAND<br>
+                                        
+                                          
+											Part of a Whole
+											<a href="/en/part-whole/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/05/08/Title_SM.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+											Blood and Feathers
+											<a href="/en/blood-and-feathers/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/04/17/CockfightingThumbnail.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+											
+											<a href="/en/carmen-pedro-love-story/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/04/17/family_vanhouten_thumbnail.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+											Forbidden Refuge
+											<a href="/en/forbidden-refuge/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/04/17/dennis_thumbnail_1.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+											Not At Home
+											<a href="/en/not-home/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/04/19/Title-Slide_Picture.jpg" style="max-width:100%"/></a>
+										  
+										
+                                          
+											The Girl in Heels
+											<a href="/en/girl-heels/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/05/01/carlson_slide_img.jpg" style="max-width:100%"/></a>
+										  
+										
+                                    </div>
+
+                                    <div class="scroll" id="scroll-search">
+
+                                        SEARCH
+                                    </div>
+
+                                    
+                                    <div class="buttons">
+										<div class="scroll-btn" id="down-btn">
+                                        	<img  src="http://reinhardt.jomc.unc.edu/static//images/down-arrow.png"/>
+                                        </div>
+										<div class="scroll-btn" id="up-btn">
+                                        	<img  src="http://reinhardt.jomc.unc.edu/static//images/up-arrow.png"/>
+                                       	</div>
+                                    </div>
+                                    
+                                </div><!--////end slidemenu-->
+                 		   </div>
+               			 </div> <!-- ////END SIDEBAR DIV -->
+                         
+                    	 <div class="eleven columns centered" id="video-div"><!------------VIDEO------------>
+                            <div class="flex-video widescreen vimeo">
+                                <iframe src="http://player.vimeo.com/video/41817277?&api=1&player_id=player_1&title=0&byline=0&portrait=0" id="player_1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            </div>
+                        </div><!-- ////END VIDEO -->
+                        
+                    </div>
+                </div> <!-- End row above bottm cream bar -->
+			</div>
+        </div>                
+        <div class="row" id="bottom-cream-bar-container"> <!-- Create bottom cream bar -->
+           	<div id="bottom-cream-bar"></div>
+        </div> <!-- End bottom cream bar --> 
+		
+              
+        <div class = "body-row row"> <!------------CONTENT AREA------------>
+            
+              <div class = "twelve columns"> <!------------CONTENT AREA------------>
+            
+            	<div class="row"> <!-- Create Text Above Div -->
+                	<div class="twelve columns">
+                    	<div class="divNav">MORE</div>
+                    </div>
+                </div>  <!-- End Text Above Div -->
+                
+                <div class="row"> <!-- Content Box -->
+                    <div class="twelve columns" id="more-box">
+                    	<div class="storyBox">
+                        	<div class="textHead">Headline</div>
+                            <div class="textSubHead">Subheadline</div>
+                            <div class="textP"> Long description</div>
+  							<div class="pullQuote">""<br> -</div>
+  						</div> 
+                    </div>
+                </div>
+            </div> <!-- End content box -->
+                
+            <!-- ////END CONTENT AREA -->
+                
+        </div><!-- ////END CONTENT/SIDEBAR ROW -->
+        
+        
+		
+			
+        <div class="body-row row hide-on-phones"> <!------------R-BAR------------>
+            
+            
+            
+            
+        </div><!--////END R-BAR-->
+                        
+	</div>	<!-- ////END CONTAINER -->
+    
+</div> <!-- ////END CONTAINER -->    
+    <div id="footer"><!------------FOOTER AREA------------>    
+        
+        	<div id="footer-logo">
+            	<img src="http://reinhardt.jomc.unc.edu/static/images/logo.png" width="250px" height="109px"/>
+            </div>
+
+        	<div id="footer-links">
+        		<div class="footerNav hide-on-phones">
+            	<ul>
+            		<li><a href="#">FACEBOOK</a></li>
+	            	<li><a href="#">TWITTER</a></li>
+	            
+            		<li><a href="en/about/">ABOUT</a></li>
+	            	<li><a href="/en/">ENGLISH</a></li>
+	            	<li><a href="/es/">SPANISH</a></li>
+	            
+	            	<li style="border:none;"><a href="en">LIVING GALAPAGOS © 2012</a></li>
+                    
+                </ul>
+                </div>
+            </div>
+            
+    </div><!--////END FOOTER AREA-->
+    <div class="dim"></div>
+    
+
+
+
+
+
+	<!-- Included JS Files -->
+
+	<script src="http://reinhardt.jomc.unc.edu/static/js/modernizr.foundation.js"></script>
+	<script src="http://reinhardt.jomc.unc.edu/static/js/foundation.js"></script>
+	<script src="http://reinhardt.jomc.unc.edu/static/js/app.js"></script>
+
+</body>
+</html>
+
