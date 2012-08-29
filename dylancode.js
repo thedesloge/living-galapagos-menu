@@ -96,9 +96,9 @@
 				var scrollID = $(this).attr("id");
 				//var topPosition = (scrollID=="up-btn") ? 0 : -scrollDistance;			
 				var direction = (scrollID=="up-btn") ? "up" : "down";
-				$(this).mouseenter( function(){
+				$(this).mousedown( function(){
 					makeScroll(this, direction, scrollID);
-				}).mouseout( function(){
+				}).mouseup( function(){
 					$(activeDiv).stop();
 				});
 			});
