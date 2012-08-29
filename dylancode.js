@@ -95,20 +95,20 @@
 			$(".scroll-btn").each( function(){
 				var scrollID = $(this).attr("id");
 				//var topPosition = (scrollID=="up-btn") ? 0 : -scrollDistance;			
-				var direction = (scrollID=="up-btn") ? "up" : "down";				
-				makeScroll(this, direction, scrollID);
+				var direction = (scrollID=="up-btn") ? "up" : "down";
+				$(this).mouseenter( function(){
+					makeScroll(this, direction, scrollID);
+				}).mouseout( function(){
+					$(activeDiv).stop();
+				});
 			});
 
 			//Takes the buttons' information as passed into it and assigns a mouse-over animation/stop
 			function makeScroll(activeBtn, direction, scrollID){
-				$(activeBtn).mouseenter( function() {
 					var topPosition = (scrollID=="up-btn") ? 0 : -scrollDistance;	
 					if(scrollDistance > 0){
 						$(activeDiv).animate({top: topPosition}, getScrollSpeed(direction)*3);
 					}
-				}).mouseout( function(){
-					$(activeDiv).stop();
-				});
 			}
 
 			//Calculates how fast the scroller needs to move based on its position and the direction moving
