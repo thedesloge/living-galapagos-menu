@@ -72,9 +72,10 @@ bottom-cream-bar-container {background-image:url(../images/nav_bg.png); border:1
 -webkit-box-shadow: 3px 3px 3px #555;
 box-shadow: 3px 3px 3px #555;
 }
-.sidebar-item {height: 262px; background-color: #fff; -moz-box-shadow: 3px 3px 3px #555;
+.sidebar-item {background-color: #fff; -moz-box-shadow: 3px 3px 3px #555;
 -webkit-box-shadow: 3px 3px 3px #555;
 box-shadow: 3px 3px 3px #555; margin-bottom: 17px;}
+.sidebar-holder {width:79%; padding:11%}
 .sidebar-text{ padding: 1em}
 .submenu {position: absolute; top: 0px; left: -100%; background-color: #369; width: 100%;}
 .submenu ul {margin:0px;}
