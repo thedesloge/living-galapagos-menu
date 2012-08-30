@@ -164,7 +164,6 @@
 					//PROBLEM: PLAY WORKS, MENU SLIDES. 1ST PAUSE WORKS, MENU SLIDES BACK. THEN 2ND PLAY FUCKS UP BECAUSE ISPLAYING IS NOW TRUE. CHANGING TRUE IN "ONPAUSE" LAUNCHES INFINITE LOOP BETWEEN PLAY AND PAUSE BECAUSE IT CHECKS ONPAUSE...
 
                     function setupEventListeners() {
-
                         function onPlay() {
                             froogaloop.addEvent('play', function(data) {
 								if (!isPlaying){
