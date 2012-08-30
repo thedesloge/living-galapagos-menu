@@ -34,18 +34,18 @@
 				var topDistance = $(this).position().top;
 				$("#scroll-"+iconID).css("margin-top",topDistance);
 				$(this).mouseover(function(){
-					onIconMouseover(index, totalIcons, iconID, topDistance);		
+					onIconMouseover(iconID, topDistance);		
 				});
 			});
 				
 			//Function that makes the corresponding div appear
-			function onIconMouseover(index, totalIcons, iconID, topDistance){
+			function onIconMouseover(iconID, topDistance){
 			//	froogaloop.api('pause');
 				var lastActive=activeDiv;
 				activeDiv="#scroll-"+iconID;
 				if (activeDiv != lastActive){
 					$(lastActive).stop();
-					drawIn(lastActive, index);
+					drawIn(lastActive);
 				}
 			}
 			
@@ -56,11 +56,15 @@
 					console.log("animation when not playing");
 					$("#sidebar-div").css("width","21.2%");
 					$("#slidemenu").css("left", "0%");
-					
-					$(selector).animate({"left": "-100%"}, 300, function(){
-						drawOut(activeDiv);
+					if(selector){
+						$(selector).animate({"left": "-100%"}, 300, function(){
+							drawOut(activeDiv);
+							getVars();
+						});
+					} else {
+						drawOut(activeDiv);	
 						getVars();
-					});
+					}
 				} else{
 					console.log("playing is true");
 					$(selector).css("left","-100%");
