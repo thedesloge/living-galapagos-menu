@@ -13,7 +13,7 @@
 			}
 			function slideOpen(){
 				console.log("openning");
-			    $("#sidebar-div").css("width","17.38%");
+			    $("#sidebar-div").css("width","21.2%");
 				$("#slidemenu").animate({"left": "0%"}, 300, function(){});
 			}
 			
@@ -54,7 +54,7 @@
 			function drawIn(selector){
 				if (!isPlaying){
 					console.log("animation when not playing");
-					$("#sidebar-div").css("width","17.38%");
+					$("#sidebar-div").css("width","21.2%");
 					$("#slidemenu").css("left", "0%");
 					
 					$(selector).animate({"left": "-100%"}, 300, function(){
@@ -71,7 +71,7 @@
 			//function animates div as it comes out to view &AND& sets last animated
 			function drawOut(selector){
 				//$(activeDiv).css("top","0");
-				$(selector).animate({"left": "0px"}, 300);
+				$(selector).animate({"left": "0%"}, 300);
 				
 			}
 			
