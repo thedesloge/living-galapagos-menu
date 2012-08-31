@@ -23,7 +23,6 @@
 			$("#videotext").click(function(){
 				froogaloop.api('play')
 			});
-
 			
 			//lists active div for sliding decisions
 			//var activeDiv="#scroll-cat1";
@@ -181,7 +180,6 @@
                     function setupEventListeners() {
                         function onPlay() {
                             froogaloop.addEvent('play', function(data) {
-								alert("T");
 								if (!isPlaying){
 									$(".dim").css("display","block");
 									$(".dim").animate({ opacity: "1.0" }, 800);;
