@@ -19,6 +19,11 @@
 			
 			//----------------------------------------------------------------SLIDING MENU
 
+
+			$("#videotext").click(function(){
+				froogaloop.api('play')
+			});
+
 			
 			//lists active div for sliding decisions
 			//var activeDiv="#scroll-cat1";
@@ -29,9 +34,7 @@
 			    $("#sidebar-div").css("width","21.2%");
 				$("#slidemenu").css("left","0%");
 			}
-			
-			$("#videotext").css("width","50%");
-			
+						
 			// makes activeDiv open
 			$(activeDiv).css("left","0%");
 			
@@ -155,8 +158,7 @@
                     var container = document.getElementById(player_id).parentNode.parentNode;
                     froogaloop = $f(player_id);
                     var apiConsole = container.querySelector('.console .output');
-					
-					froogaloop.api('play')
+										
                     function setupSimpleButtons() {
                      /*   var buttons = container.querySelector('div dl.simple'),
                             playBtn = buttons.querySelector('.play'),
@@ -179,6 +181,7 @@
                     function setupEventListeners() {
                         function onPlay() {
                             froogaloop.addEvent('play', function(data) {
+								alert("T");
 								if (!isPlaying){
 									$(".dim").css("display","block");
 									$(".dim").animate({ opacity: "1.0" }, 800);;
