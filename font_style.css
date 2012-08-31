@@ -5,11 +5,13 @@
 @font-face {
 	font-family: Caviar Dreams;
 	src:url(../Fonts/CaviarDreams.ttf);
+	
 }
 
 @font-face {
 	font-family: qhytsdakx;
 	src:url(../Fonts/qhyts__.ttf);
+	
 }
 
 @font-face {
@@ -38,6 +40,7 @@ overflow:auto;
 	font-size: 3.5em;
 	color: #29221c;
 	line-height: 1em;
+	
 }
 
 .textSubHead {
@@ -71,6 +74,7 @@ overflow:auto;
 	font-size: 2em;
 	color: #29221c;
 	line-height:1em;	
+	text-transform:uppercase;
 }
 
 .sidebarBoxP {
@@ -86,6 +90,7 @@ overflow:auto;
 	font-size: 2em;
 	color:#29221c;
 	line-height:1em;
+text-transform:uppercase;
 }
 
 .institute {

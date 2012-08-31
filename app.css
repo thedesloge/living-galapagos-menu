@@ -100,6 +100,11 @@ box-shadow: 3px 3px 3px #555}
 #footer-links ul {}
 #footer-links ul li { list-style-type: none; display: inline; border-right: 1px solid #fff; padding:0 .5em 0 .5em;}
 
+
+
+.textHead {text-transform:uppercase;}
+.sidebarBoxTitle {text-transform:uppercase;}
+
 /* -----------------------------------------
    Pseudo Classes
 ----------------------------------------- */
