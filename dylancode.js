@@ -22,7 +22,15 @@
 			
 			//lists active div for sliding decisions
 			//var activeDiv="#scroll-cat1";
-			var activeDiv="";
+			var activeDiv="#videotext";
+			var noActive=true;
+			if (activeDiv){
+				noActive=false;
+			    $("#sidebar-div").css("width","21.2%");
+				$("#slidemenu").css("left","0%");
+			}
+			
+			$("#videotext").css("width","50%");
 			
 			// makes activeDiv open
 			$(activeDiv).css("left","0%");
@@ -41,6 +49,10 @@
 			//Function that makes the corresponding div appear
 			function onIconMouseover(iconID, topDistance){
 			//	froogaloop.api('pause');
+				if (noActive){
+					slideOpen();
+					noActive=false;	
+				}
 				var lastActive=activeDiv;
 				activeDiv="#scroll-"+iconID;
 				if (activeDiv != lastActive){
@@ -54,8 +66,8 @@
 			function drawIn(selector){
 				if (!isPlaying){
 					console.log("animation when not playing");
-					$("#sidebar-div").css("width","21.2%");
-					$("#slidemenu").css("left", "0%");
+					//$("#sidebar-div").css("width","21.2%");
+					//$("#slidemenu").css("left", "0%");
 					if(selector){
 						$(selector).animate({"left": "-100%"}, 300, function(){
 							drawOut(activeDiv);
@@ -143,7 +155,8 @@
                     var container = document.getElementById(player_id).parentNode.parentNode;
                     froogaloop = $f(player_id);
                     var apiConsole = container.querySelector('.console .output');
-
+					
+					froogaloop.api('play')
                     function setupSimpleButtons() {
                      /*   var buttons = container.querySelector('div dl.simple'),
                             playBtn = buttons.querySelector('.play'),
@@ -161,7 +174,7 @@
 
                     }
 					
-					//PROBLEM: PLAY WORKS, MENU SLIDES. 1ST PAUSE WORKS, MENU SLIDES BACK. THEN 2ND PLAY FUCKS UP BECAUSE ISPLAYING IS NOW TRUE. CHANGING TRUE IN "ONPAUSE" LAUNCHES INFINITE LOOP BETWEEN PLAY AND PAUSE BECAUSE IT CHECKS ONPAUSE...
+					//PROBLEM: PLAY WORKS, MENU SLIDES. 1ST PAUSE WORKS, MENU SLIDES BACK. THEN 2ND PLAY MESSES UP BECAUSE ISPLAYING IS NOW TRUE. CHANGING TRUE IN "ONPAUSE" LAUNCHES INFINITE LOOP BETWEEN PLAY AND PAUSE BECAUSE IT CHECKS ONPAUSE...
 
                     function setupEventListeners() {
                         function onPlay() {
