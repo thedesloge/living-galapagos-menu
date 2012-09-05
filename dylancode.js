@@ -99,13 +99,13 @@
 			var divPosition = parseInt($(activeDiv).css("margin-top"));	
 			var scrollHeight = $(activeDiv).height()+(divPosition);
 			var containerHeight = $("#sidebar-div").height()
-			var scrollDistance = (scrollHeight-containerHeight);
+			var scrollDistance = (scrollHeight-containerHeight)*1.2;
 
 			function getVars(){
 				divPosition = parseInt($(activeDiv).css("margin-top"));	
 				scrollHeight = $(activeDiv).height()+(divPosition);
 				containerHeight = $("#sidebar-div").height()
-				scrollDistance = (scrollHeight-containerHeight);
+				scrollDistance = (scrollHeight-containerHeight)*1.2;
 				//alert("divPosition: "+divPosition + " scrollHeight: "+scrollHeight + " activeDiv height: " + $(activeDiv).height() + " containerHeight: " + containerHeight + "scrollDistance: " + scrollDistance);
 			}
 			
