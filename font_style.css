@@ -180,16 +180,16 @@ text-transform:uppercase;
 
 .gridItem {
 	margin-top: .5em;
-	height: 310px;
-	width:97%;
-	background: #fff;
-	padding:.5em;
-	-moz-box-shadow: 3px 3px 3px #555;
-	-webkit-box-shadow: 3px 3px 3px #555;
-	box-shadow: 3px 3px 3px #555;
-	margin-bottom: 17px;
-	margin-right:4em;
-	float:left;
+height: 280px;
+width: 85%;
+background: white;
+padding: 7.5%;
+-moz-box-shadow: 3px 3px 3px #555;
+-webkit-box-shadow: 3px 3px 3px #555;
+box-shadow: 3px 3px 3px #555;
+margin-bottom: 17px;
+margin-right: 4em;
+float: left;
 	
 }
 
@@ -206,10 +206,26 @@ text-transform:uppercase;
 	line-height:1.3em;
 }
 
-#toggleSearch, #toggleSearch a, #toggleSearch a:visited, #toggleSearch a:active {
-	font-family:Caviar Dreams; color:#fff; font-size:1em; line-height:2.5em;
+#toggleSearch {
+font-family:Caviar Dreams;
+	font-size: 1.2em;
+	line-height: 2.2em;
+	color:#fff;	
+	text-shadow: 2px 2px 2px #000;
 }
-#toggleSearch a:hover {text-decoration:underline;}
+
+#toggleSearch a, #toggleSearch a:visited, #toggleSearch a:active {
+	font-family:Caviar Dreams;
+	font-size: 1.2em;
+	line-height: 2.2em;
+	color:#fff;	
+	text-shadow: 2px 2px 2px #000;
+}
+#toggleSearch a:hover {text-decoration:underline;font-family:Caviar Dreams;
+	font-size: 1.2em;
+	line-height: 2.2em;
+	color:#fff;	
+	text-shadow: 2px 2px 2px #000;}
 
 
 
