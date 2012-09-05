@@ -11,6 +11,7 @@
 @font-face {
 	font-family: qhytsdakx;
 	src:url(../Fonts/qhyts__.ttf);
+	text-transform:uppercase;
 	
 }
 
@@ -37,7 +38,7 @@ overflow:auto;
 
 .textHead {
 	font-family:qhytsdakx;
-	font-size: 3.5em;
+	font-size: 4.3em;
 	color: #29221c;
 	line-height: 1em;
 	
@@ -45,8 +46,8 @@ overflow:auto;
 
 .textSubHead {
 	font-family:museo-sans-500;
-	font-size:1.4em;
-	color:#dfe3d5;
+	font-size:1.1em;
+	color:#a9a8a6;
 	padding-bottom: 1.5em;
 }
 
@@ -59,11 +60,11 @@ overflow:auto;
 
 .pullQuote {	
 	font-family:museo-sans-500;
-	font-size: 1.75em;
+	font-size: 1.65em;
 	color:#4fa7a9;
 	padding: 1.5em 2em 1.5em 2em;
 	text-align:center;
-	line-height:1em;
+	line-height:1.5em;
 }
 
 
@@ -71,16 +72,17 @@ overflow:auto;
 
 .sidebarBoxTitle {
 	font-family: qhytsdakx;
-	font-size: 2em;
+	font-size: 2.4em;
 	color: #29221c;
-	line-height:1em;	
-	text-transform:uppercase;
+	line-height:1.1em;	
+	
 }
 
 .sidebarBoxP {
-	font-family: museo-sans-300;
+	font-family: museo-sans-500;
 	font-size:1em;
-	color: #29221;	
+	color: #a9a8a6;	
+	line-height:1.2em;
 }
 
 /*related research*/
