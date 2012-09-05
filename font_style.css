@@ -28,7 +28,7 @@
 /*story text*/
 
 .storyBox {
-	padding: 5em 5em 3em 5em;
+	padding: 5em 5em 5em 5em;
 	-moz-column-width: 20em;
 -webkit-column-width: 20em;
 -moz-column-gap: 3em;
@@ -48,7 +48,7 @@ overflow:auto;
 	font-family:museo-sans-500;
 	font-size:1.1em;
 	color:#a9a8a6;
-	padding-bottom: 1.5em;
+	padding-bottom: .8em;
 }
 
 .textP {
@@ -122,15 +122,15 @@ text-transform:uppercase;
 	color:#fff;	
 	line-height:1.3em;
 	display: inline;
-	text-shadow: 3px 3px 3px #000;
+	text-shadow: 2px 2px 2px #000;
 }
 
 .divNav {
 	font-family:Caviar Dreams;
 	font-size: 1.5em;
-	line-height: 1.5em;
+	line-height: 2.2em;
 	color:#fff;	
-	text-shadow: 3px 3px 3px #000;
+	text-shadow: 2px 2px 2px #000;
 }
 
 .footerNav, .footerNav a, .footerNav a:hover, .footerNav a:focus {

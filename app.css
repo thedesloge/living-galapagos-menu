@@ -33,7 +33,9 @@ body {
 	}
 
 #logo-li {margin-bottom: 0em; width: 21.68%; height: 203px; display: inline; background-size:30%; float: left;  }
-.logo-background{ position:absolute; width: 25.5%; height:100%; background-image:url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");}
+.logo-background{ position:absolute; width: 25.5%; height:100%; background-image:url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");-moz-box-shadow: 0 0 13px #36322f;
+-webkit-box-shadow: 0 0 13px #36322f;
+box-shadow: 0 0 13px #36322f;}
 div.logo { max-width: 75%;}
 #top-nav-li {text-align: right; margin-bottom: 0px; height: 28px; margin-top: 135px; width:78.32%; float: left; display: inline; background-color: none;}
 #top-nav-li ul {}
@@ -70,19 +72,23 @@ div#botbutton {bottom: 0; line-height: 50px; vertical-align: bottom;}
 
 div.dim {position: fixed; top: 0; bottom: 0; z-index: 8; background-image:url(../images/dim.png); height: 100%; width: 100%; display: none; opacity: 0.0;}
 
-#vidrow {z-index: 10;}
+#vidrow {z-index: 10;-moz-box-shadow: 0 0 13px #36322f;
+-webkit-box-shadow: 0 0 13px #36322f;
+box-shadow: 0 0 13px #36322f;}
 #video-div {position: relative; z-index: 0;}
 #video-div div {margin-bottom: 0px;}
 bottom-cream-bar-container {background-image:url(../images/nav_bg.png); border:1px solid red;}
-#bottom-cream-bar {height: 40px; background-color: #EAE5D7;}
+#bottom-cream-bar {height: 40px; background-color: #EAE5D7; -moz-box-shadow: 0 0 13px #36322f;
+-webkit-box-shadow: 0 0 13px #36322f;
+box-shadow: 0 0 13px #36322f; margin-bottom: 17px;}
 .body-row {margin-top: 40px;}
-#more-box {height: 100%; border: none; background-image: url(../images/content-top.png); background-repeat:repeat-x; background-color:#fff; -moz-box-shadow: 3px 3px 3px #555;
--webkit-box-shadow: 3px 3px 3px #555;
-box-shadow: 3px 3px 3px #555;
+#more-box {height: 100%; border: none; background-image: url(../images/content-top.png); background-repeat:repeat-x; background-color:#fff; -moz-box-shadow: 0 0 13px #36322f;
+-webkit-box-shadow: 0 0 13px #36322f;
+box-shadow: 0 0 13px #36322f;
 }
-.sidebar-item {background-color: #fff; -moz-box-shadow: 3px 3px 3px #555;
--webkit-box-shadow: 3px 3px 3px #555;
-box-shadow: 3px 3px 3px #555; margin-bottom: 17px;}
+.sidebar-item {background-color: #fff; -moz-box-shadow: 0 0 13px #36322f;
+-webkit-box-shadow: 0 0 13px #36322f;
+box-shadow: 0 0 13px #36322f; margin-bottom: 17px;}
 .sidebar-holder {width:79%; padding:11%}
 
 .submenu {position: absolute; top: 0px; left: -100%; background-color: #369; width: 100%;}
@@ -97,13 +103,12 @@ box-shadow: 3px 3px 3px #555}
 #research-box {height: 200px; background-image: url(../images/content-top.png); background-repeat:repeat-x; background-color: #fff; padding: 3.5em 0.5em 0.5em 0.5em; -moz-box-shadow: 3px 3px 3px #555;
 -webkit-box-shadow: 3px 3px 3px #555;
 box-shadow: 3px 3px 3px #555}
-#footer {margin: 70px 0px; height: 120px; background-image:url(../images/nav_bg.png); padding: 0px 20px;}
+#footer {margin: 70px 0px; height: 120px; background-image:url(../images/nav_bg.png); padding: 0px auto;}
 #footer-logo {float: left; color: #FFF; width:200px;padding:1%;}
 #footer-links {float: right; text-align: right;}
 #footer-links ul {}
 #footer-links ul li { list-style-type: none; display: inline; border-right: 1px solid #fff; padding:0 .5em 0 .5em;}
-
-
+#footer-full {margin:0px auto; max-width:1280px;}
 
 .textHead {text-transform:uppercase;}
 .sidebarBoxTitle {text-transform:uppercase;}
