@@ -4,7 +4,7 @@
 /*fonts*/
 @font-face {
 	font-family: Caviar Dreams;
-	src:url(../Fonts/CaviarDreams.ttf);
+	src:url(http://reinhardt.jomc.unc.edu/static/Fonts/CaviarDreams.ttf);
 	
 }
 
@@ -142,6 +142,10 @@ text-transform:uppercase;
 	text-shadow: 2px 2px 2px #000;
 }
 
+.menu-hover p {
+	font-family:Caviar Dreams;
+	color: #F6F3EE 
+}
 
 /*search styles*/
 #filterBox {

@@ -100,13 +100,24 @@
 			var scrollHeight = $(activeDiv).height()+(divPosition);
 			var containerHeight = $("#sidebar-div").height()
 			var scrollDistance = (scrollHeight-containerHeight)*1.2;
-
+			
+			hideButtons();
+			
 			function getVars(){
 				divPosition = parseInt($(activeDiv).css("margin-top"));	
 				scrollHeight = $(activeDiv).height()+(divPosition);
 				containerHeight = $("#sidebar-div").height()
 				scrollDistance = (scrollHeight-containerHeight)*1.2;
-				//alert("divPosition: "+divPosition + " scrollHeight: "+scrollHeight + " activeDiv height: " + $(activeDiv).height() + " containerHeight: " + containerHeight + "scrollDistance: " + scrollDistance);
+				
+				hideButtons();
+			}
+			
+			function hideButtons(){
+				if (scrollDistance <= 0){
+					$(".buttons").css("display","none");
+				} else {
+					$(".buttons").css("display","block");
+				}
 			}
 			
 			//Loop that 1) Finds both scrollbuttons 2)Gives the up-btn and down-btn different parameters to pass into 3) the makeScroll function
@@ -123,9 +134,9 @@
 
 			//Takes the buttons' information as passed into it and assigns a mouse-over animation/stop
 			function makeScroll(activeBtn, direction, scrollID){
-					var topPosition = (scrollID=="up-btn") ? 0 : -scrollDistance;	
+					var topPosition = (scrollID=="up-btn") ? 0 : -scrollDistance
 					if(scrollDistance > 0){
-						$(activeDiv).animate({top: topPosition}, getScrollSpeed(direction)*3);
+						$(activeDiv).animate({top: topPosition}, getScrollSpeed(direction)*6);
 					}
 			}
 
@@ -134,7 +145,7 @@
 				scrollPosition = ($(activeDiv).position().top);
 				scrollSpeed = (scrollPosition+scrollDistance);
 				var speed = (direction=="up") ? scrollDistance-scrollSpeed : scrollSpeed
-				return speed*2;
+				return speed;
 			};
 			
 			//----------------------------------------------------------------FROOGALOOP
