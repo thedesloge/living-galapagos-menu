@@ -55,9 +55,9 @@ div.menu-hover p {color: #EAE5D7; font-size: 17px; position: absolute; top: 50%;
 div.menu-img img {max-width:100%; display: block;}
 .scrollbuffer { height: 27px; }
 #scroll-feat {font-family: museo-sans-300; font-size: 1.5em; color:#EAE5D7;line-height:1.5em;}
-#scroll-search {margin-top:17%; font-family:museo-sans-300; font-size: 1.5em; color:#EAE5D7;line-height:1.5em;}
-#scroll-cat1 {margin-top:1.5%; font-family:museo-sans-300; font-size: 1.5em; color:#EAE5D7;line-height:1.5em;}
-#scroll-cat2 {margin-top:9.5%; font-family:museo-sans-300; font-size: 1.5em; color:#EAE5D7;line-height:1.5em;}
+#scroll-search {margin-top:17%; font-family:Caviar Dreams; font-size: 1.5em; color:#F6F3EE;line-height:1.5em;text-shadow: 2px 2px 2px #000;text-align:center;}
+#scroll-cat1 {margin-top:1.5%; font-family:Caviar Dreams; font-size: 1.5em; color:#F6F3EE;line-height:1.5em;text-shadow: 2px 2px 2px #000;}
+#scroll-cat2 {margin-top:9.5%; font-family:Caviar Dreams; font-size: 1.5em; color:#F6F3EE;line-height:1.5em;text-shadow: 2px 2px 2px #000;}
 .scroll-btn img {cursor: pointer;}
 div.buttons { width: 100%; height: 41px; position: absolute; z-index: 4; text-align: center;}
 div#topbutton {top: 0;}

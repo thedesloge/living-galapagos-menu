@@ -134,12 +134,13 @@ text-transform:uppercase;
 }
 
 .footerNav, .footerNav a, .footerNav a:hover, .footerNav a:focus {
-	font-family:museo-sans-300;
+	font-family:museo-sans-500;
 	line-height:9.5em;
 	font-size: 1em;
 	color:#F6F3EE;	
 	display: inline;
 	text-shadow: 2px 2px 2px #000;
+	text-transform:uppercase;
 }
 
 .menu-hover p {
