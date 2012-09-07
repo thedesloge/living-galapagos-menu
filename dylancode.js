@@ -95,6 +95,22 @@
 			
 			//----------------------------------------------------------------SCROLLS MENU
 			
+			var mouseOverIconsSidebar = false
+			var timeout;
+			$("#icons-div, #sidebar-div").mouseenter( function(){
+				mouseOverIconsSidebar = true;
+				window.clearTimeout(timeout);
+			}).mouseleave(function(){
+				mouseOverIconsSidebar = false;
+				timeout = setTimeout(function(){
+					if(!mouseOverIconsSidebar && activeDiv!="#videotext"){
+						lastActive = activeDiv;
+						activeDiv = "#videotext";
+						drawIn(lastActive);
+					}
+				}, 1000);
+			});
+			
 			//Determines values for scroll usage: The height of the container and scroller and the overall travel-distance needed
 			var divPosition = parseInt($(activeDiv).css("margin-top"));	
 			var scrollHeight = $(activeDiv).height()+(divPosition);
