@@ -41,7 +41,7 @@ div.logo { max-width: 75%;}
 #top-cream-bar {-moz-box-shadow: 0 0 13px #000;
 -webkit-box-shadow: 0 0 13px #000;
 box-shadow: 0 0 13px #000;text-align: right; margin-bottom: 0px; height: 40px; width:74.6%; float: right; display: inline; background-image: url(../images/content-top.png);background-repeat:repeat-x; background-color: #EAE5D7;}
-#video-row {background-image:url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png"); position: relative; }
+#video-row {background:none; position: relative; }
 #icons-div {width: 4.3%; position: absolute; top: 0; left: 0; z-index: 1; color: #FFF; padding-top:1em; height: 100%;}
 #icons-div li{opacity:0.8; text-align: center; display:block; text-decoration:none; margin-bottom:1em;}
 #sidebar-div {overflow: hidden; height: 100%; position: absolute; top: 0; left: 4.3%; z-index: 10; color: #FFF; background-image:url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");}
@@ -117,6 +117,58 @@ box-shadow: 0 0 13px #000;}
 .textHead {text-transform:uppercase;}
 .sidebarBoxTitle {text-transform:uppercase;}
 .sidebarBoxP {font-family:museo-sans-500;!important}
+
+
+
+/*new home styles*/
+
+
+
+#icons-div-home {
+width: 4.3%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+color: white;
+padding-top: 1em;
+height: 98%;
+background-image: url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");
+}
+
+#video-div-home {
+	position: relative; z-index: 0;
+	/*	visibility: hidden;*/
+}
+
+#rightFloatBar {
+width: 4.4%;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 1;
+color: white;
+padding-top: 1em;
+height: 98%;
+background-image: url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");
+}
+
+
+#homePlayBtn{
+	width:102px
+	height:82px;
+	position:absolute;
+	top:40%;
+	left:49%;
+	z-index:100;
+}
+
+#homePlayBtn:hover {cursor:pointer}
+
+.flex-video {
+	visibility:hidden;
+}
+
 
 /* -----------------------------------------
    Pseudo Classes
