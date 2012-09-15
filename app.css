@@ -157,11 +157,11 @@ background-image: url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");
 
 
 #homePlayBtn{
-	width:102px
-	height:82px;
+	width:130px;
+	height:100px;
 	position:absolute;
-	top:40%;
-	left:49%;
+	top:38%;
+	left:46%;
 	z-index:100;
 	
 }
