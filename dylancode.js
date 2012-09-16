@@ -21,8 +21,18 @@
 
 
 			$("#videotext").click(function(){
-				froogaloop.api('play')
+				froogaloop.api('play');
 			});
+			
+			if($('#homePlayBtn')){
+				$('#flex-video').css({'visibility':'hidden'});
+				$('#homePlayBtn').click(function(){
+					$('#player_1').css({'width':'100%', 'height':'100%'});
+					$('#flex-video').css({'visibility':'visible'});
+					$('#homePlayBtn').hide();
+					froogaloop.api('play');
+				})
+			}
 			
 			//lists active div for sliding decisions
 			//var activeDiv="#scroll-cat1";
@@ -180,9 +190,10 @@
                 }
 
                 function ready(player_id) {
-                    // Keep a reference to Froogaloop for this player
+                	// Keep a reference to Froogaloop for this player
                     var container = document.getElementById(player_id).parentNode.parentNode;
                     froogaloop = $f(player_id);
+                    
                     var apiConsole = container.querySelector('.console .output');
 										
                     function setupSimpleButtons() {
