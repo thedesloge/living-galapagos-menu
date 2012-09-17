@@ -60,7 +60,7 @@ div.menu-img img {max-width:100%; display: block;}
 #scroll-cat1 {margin-top:1.5%; font-family:Caviar Dreams; font-size: 1.5em; color:#F6F3EE;line-height:1.5em;text-shadow: 2px 2px 2px #000;}
 #scroll-cat2 {margin-top:9.5%; font-family:Caviar Dreams; font-size: 1.5em; color:#F6F3EE;line-height:1.5em;text-shadow: 2px 2px 2px #000;}
 .scroll-btn img {cursor: pointer;}
-div.buttons { width: 100%; height: 31px; position: absolute; z-index: 4; text-align: center; background-color: #FF0000;}
+div.buttons { width: 100%; height: 31px; position: absolute; z-index: 4; text-align: center; }
 div#topbutton {top: 0;}
 div#topbutton img {margin-top: 8px;}
 div#botbutton {bottom: 0; line-height: 41px; vertical-align: bottom;}
@@ -168,7 +168,7 @@ background-image: url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");
 	visibility:hidden;
 }
 
-#playStory{width:40%;position:absolute;top:87%;	right:8%;	z-index:100;	overflow:visible;	cursor:pointer;}
+#playStory{width:40%;position:absolute; top:75%;	left:8%;	z-index:100;	overflow:visible;	cursor:pointer;}
 
 /* -----------------------------------------
    Pseudo Classes
