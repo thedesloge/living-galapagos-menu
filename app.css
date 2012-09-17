@@ -168,7 +168,7 @@ background-image: url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");
 	visibility:hidden;
 }
 
-#playStory{width:40%;position:absolute; top:75%;	left:8%;	z-index:100;	overflow:visible;	cursor:pointer;}
+#playStory{width:40%;position:absolute; top:76%;	left:8%;	z-index:100;	overflow:visible;	cursor:pointer;}
 
 /* -----------------------------------------
    Pseudo Classes

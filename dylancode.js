@@ -257,6 +257,11 @@
                             froogaloop.addEvent('finish', function(data) {
 								//Add onFinish stuff
                                 console.log('finish');
+                                if($('#homePlayBtn')){
+                                	$('#player_1').css({'width':'0', 'height':'0'});
+                                	$('#homePlayBtn').show();
+                                	$(".dim").css("display", "none");
+                    			}
                             });
                         }
 
