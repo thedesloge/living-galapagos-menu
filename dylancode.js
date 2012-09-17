@@ -107,7 +107,7 @@
 			
 			var mouseOverIconsSidebar = false
 			var timeout;
-			$("#icons-div, #sidebar-div").mouseenter( function(){
+			$("#icons-div, #sidebar-div, #icons-div-home").mouseenter( function(){
 				mouseOverIconsSidebar = true;
 				window.clearTimeout(timeout);
 			}).mouseleave(function(){
