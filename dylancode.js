@@ -212,6 +212,9 @@
                         }, false);*/
 
                     }
+					$(".dim").click(function(){
+						froogaloop.api('pause');
+					});
 					
 					//PROBLEM: PLAY WORKS, MENU SLIDES. 1ST PAUSE WORKS, MENU SLIDES BACK. THEN 2ND PLAY MESSES UP BECAUSE ISPLAYING IS NOW TRUE. CHANGING TRUE IN "ONPAUSE" LAUNCHES INFINITE LOOP BETWEEN PLAY AND PAUSE BECAUSE IT CHECKS ONPAUSE...
 
