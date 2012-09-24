@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://reinhardt.jomc.unc.edu/search/ -->
+<html lang="en" class=" js no-touch"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width">
+
+	<title>Living Galapagos</title>
+  	
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/foundation.css">
+	<link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="font_style.css">
+    <link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/tinybox_style.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  <link rel="stylesheet" href="http://reinhardt.jomc.unc.edu/static/css/styles.css">
+  <script src="./search_files/jquery.min.js"></script>
+  <script src="./search_files/jquery.videobackground.js"></script>
+
+  <script src="./search_files/tinybox.js"></script>
+  	<script>
+			$(document).ready(function() {
+				$('dl').toggle();
+				$('h2').bind('click', function(event) {
+					event.preventDefault();
+					$(this).next('dl').slideToggle(500, function() {
+						$('.video-bg-controls').videobackground('resize');
+					});
+				});
+				$('body').prepend('<div class="video-background"></div>');
+				$('.video-background').videobackground({
+					videoSource: ['http://reinhardt.jomc.unc.edu/media/uploads/background-video/h264/fishes_noaudio_-_Computer.m4v',
+						'http://reinhardt.jomc.unc.edu/media/uploads/background-video/ogg/fishes_noaudio.ogv'], 
+					controlPosition: '.video-background',
+					poster: 'http://reinhardt.jomc.unc.edu/media/uploads/background-video/jpg/fish_bg.jpg',
+					loop: 'true', 
+					resize: 'true',
+					loadedCallback: function() {
+						$(this).videobackground('mute', {controlPosition: '.video-background'});
+					}
+				});
+			});
+		</script>
+</head>
+<body><div class="video-background" style="height: 805px; "><video preload="none" poster="http://reinhardt.jomc.unc.edu/media/uploads/background-video/jpg/fish_bg.jpg" autoplay="autoplay" loop="loop"><source src="http://reinhardt.jomc.unc.edu/media/uploads/background-video/h264/fishes_noaudio_-_Computer.m4v"><source src="http://reinhardt.jomc.unc.edu/media/uploads/background-video/ogg/fishes_noaudio.ogv"></video><div class="ui-video-background ui-widget ui-widget-content ui-corner-all"><ul class="ui-video-background-controls"><li class="ui-video-background-play"><a class="ui-icon ui-icon-pause" href="http://reinhardt.jomc.unc.edu/search/#">Pause</a></li><li class="ui-video-background-mute"><a class="ui-icon ui-icon-volume-off" href="http://reinhardt.jomc.unc.edu/search/#">Unmute</a></li></ul></div></div>
+<div class="container"> <!-- container -->
+    
+		
+
+		<div class="row" id="header"> <!------------LOGO AND NAV------------>
+        	<div class="twelve columns phone-four">
+            	<ul id="header-ul">
+                	<li id="logo-li">
+						<div class="logo-background">
+                		<div class="logo"><a href="http://reinhardt.jomc.unc.edu/en"><img src="./search_files/logo.png"></a></div>
+               		</div></li>
+                	<li id="top-nav-li">
+                    	<ul class="topNav">
+							
+                            <!--<li><a href="en/credits/">CREDITS</a></li>-->
+                           
+                            <li><a href="http://reinhardt.jomc.unc.edu/en/search">ENGLISH</a></li>
+                            <li><a href="http://reinhardt.jomc.unc.edu/es/search">SPANISH</a></li>
+                            <li><a href="http://reinhardt.jomc.unc.edu/en/about/">ABOUT</a></li>
+                            
+                            <li style="border:none;"><a href="http://livinggalapagos.org/blog">BLOG</a></li>  
+                        </ul>
+                    </li>
+                	<li id="top-cream-bar"></li>
+                </ul>
+            </div>
+        </div> <!-- ////END LOGO AND NAV -->
+    
+    
+    <form action="http://reinhardt.jomc.unc.edu/en/search/" method="post"><div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="222cbbda45018f7697db4df57dc2f4cc"></div>
+       <div class="row">
+        <div class="twelve columns" id="filterBox" style="background-image:url(http://reinhardt.jomc.unc.edu/static/images/nav_bg.png); width:95.8%; height:100%;">
+        <div id="filterStories" style="padding-left: 2.5em;"><h1>FILTER STORIES</h1>
+        
+        <div class="row">
+        	<div class="three columns">
+        		<h3>Search</h3>
+        			<label for="id_search"></label>
+        			<input type="text" name="search" id="id_search">
+        		   
+        	</div>
+        	
+        	<!---see changes below to line 99,100--->
+        	
+        	<div class="three columns" id="search_cat">
+        		<h3>Categories</h3><div style="font-family:museo-sans-300;font-size: 1em;color:#fff;font-weight:normal;line-height:1.5em;margin-top:.5em;">
+        		    <input checked="checked" type="checkbox" name="category_sea" id="id_category_sea"> Sea<br>
+        		    <input checked="checked" type="checkbox" name="category_land" id="id_category_land"> Land<br>
+        		    <input checked="checked" type="checkbox" name="category_archive" id="id_category_archive"> Archive<br>
+                    </div>
+        	</div>
+        	<div class="three columns">
+        		<!---this was changed to an h3 ---><h3>Tags<h3>
+        		<select multiple="multiple" name="tags" id="id_tags">
+<option value="2009">2009</option>
+<option value="Cockfighting">Cockfighting</option>
+<option value="Coffee">Coffee</option>
+<option value="Diving">Diving</option>
+<option value="Floreana">Floreana</option>
+<option value="Galapagos">Galapagos</option>
+<option value="Health Care">Health Care</option>
+<option value="Immigration">Immigration</option>
+<option value="Isabela">Isabela</option>
+<option value="Kicker Rock">Kicker Rock</option>
+<option value="Leon Dormido">Leon Dormido</option>
+<option value="National Park">National Park</option>
+<option value="People">People</option>
+<option value="San Cristobal">San Cristobal</option>
+<option value="San Cristóbal">San Cristóbal</option>
+<option value="Santa Cruz">Santa Cruz</option>
+<option value="agriculture">agriculture</option>
+<option value="children">children</option>
+<option value="cruise ships">cruise ships</option>
+<option value="ecology">ecology</option>
+<option value="environment">environment</option>
+<option value="faith">faith</option>
+<option value="family">family</option>
+<option value="fishing">fishing</option>
+<option value="invasive species">invasive species</option>
+<option value="love">love</option>
+<option value="moving">moving</option>
+<option value="photojournalism">photojournalism</option>
+<option value="prostitution">prostitution</option>
+<option value="restaurant">restaurant</option>
+<option value="sea lions">sea lions</option>
+<option value="sex worker">sex worker</option>
+<option value="surfing">surfing</option>
+<option value="tortoise">tortoise</option>
+<option value="turtle">turtle</option>
+</select>
+        		</h2>
+        	</div>
+        	
+        	<div class="three columns" style="float:left;">
+        		<h3>You are now viewing blank of blank media items.</h3><br>
+        		<!--added an id and removed style attribute, also added <center> around the input--> <center><input id="filter_button" type="submit" value="filter" style="font-family:Caviar Dreams; font-size:3em;"></center>
+        	</div>
+        </div>
+        
+        </div>
+        </div>
+        </div>
+    </form>
+        
+        
+        <div class="row" id="toggleSearch">
+        
+        
+        <!---Add this div around the GRID and MAP toggle--->
+        <div class="divNav">
+        VIEW: <a href="http://reinhardt.jomc.unc.edu/en/search/">GRID</a> | <a href="http://reinhardt.jomc.unc.edu/en/search/map/">MAP</a>
+        </div>
+        <!--end div -->
+        
+        
+        
+        
+        <ul class="block-grid three-up mobile">
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/captain">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/captain_ab_still_13b.jpg" width="100%">
+                    <div class="sidebarBoxTitle">The Captain</div>
+           			<div class="sidebarBoxP" style="color: #555; ">The need to support his family led one man to turn to the tourism industry.</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/face-face">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/thumbnail_1.jpg" width="100%">
+                    <div class="sidebarBoxTitle">Face to Face</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Exploring the complex relationship between sea lions and humans on San Cristóbal, Galápagos</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/turning-tourism">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/thumbnail_dive.jpg" width="100%">
+                    <div class="sidebarBoxTitle">Turning to Tourism</div>
+           			<div class="sidebarBoxP" style="color: #555; ">One man's need to serve his family leads to an adventurous career underwater.</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/part-whole">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/Title_SM.jpeg" width="100%">
+                    <div class="sidebarBoxTitle">Part of a whole</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Producing the world's favorite crop in the capital of paradise</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/blood-and-feathers">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/CockfightingThumbnail.jpg" width="100%">
+                    <div class="sidebarBoxTitle">Blood and Feathers</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Francisco Paredes raises and trains roosters to fight on San Cristóbal </div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/carmen-pedro-love-story">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/family_vanhouten_thumbnail.jpg" width="100%">
+                    <div class="sidebarBoxTitle">Carmen and Pedro</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A love story of a 90-year-old Galapagos farm couple.</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/forbidden-refuge">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/dennis_thumbnail_1.jpg" width="100%">
+                    <div class="sidebarBoxTitle">Forbidden Refuge</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A mother fights to give her five sons a better life. </div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/path-light">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/Chance_surf_thumb.png" width="100%">
+                    <div class="sidebarBoxTitle">On the Path of Light</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Surfers of the Galápagos are isolated from the wider culture of professional surfing.</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/not-home">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/Title-Slide_Picture.jpg" width="100%">
+                    <div class="sidebarBoxTitle">Not At Home</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Iris moved her family from New York to the Galapagos Islands. Now, she has to make it work.</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/girl-heels">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/carlson_slide_img.jpg" width="100%">
+                    <div class="sidebarBoxTitle">The Girl in Heels</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Selling happiness for money: the trade-off of a Commercial Sex Worker</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/shark-motion">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/sharkthumb.png" width="100%">
+                    <div class="sidebarBoxTitle">Sharks Attacked</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Sharks in the Galápagos Islands are threatened by illegal fishing. </div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/local-way">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/local_way_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: The Local Way</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Looking beneath the surface on the island of Santa Cruz</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/connected-sea">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/connected_sea_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Connected to the Sea</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Local fisherman faces challenges to make a living.</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/surfing-generations">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/surfing_generations_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Surfing Generations</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Galápagos surfers discuss their heritage</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/lonesome-one">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/lonesome_thumb_1.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: The Lonesome One</div>
+           			<div class="sidebarBoxP" style="color: #555; ">There is much that tourists can't see in the life of an iconic turtle</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/evolving-faith">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/evolving_faith_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Evolving Faith</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A Catholic priest serves in Darwin's laboratory.</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/healing-hand">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/healing_thumb_2.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: A Healing Hand</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A gynecologist provides health care for all the people of Isabela Island. </div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/changing-guard">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/changing_guard_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Changing the Guard</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Galápagos National Park guards protect the islands' myriad species</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/life-art">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/life_art_thumb_1.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: A Life in Art</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Nature serves as an inspiration for a Galápagos artist</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/hanging-boyhood">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/boyhood_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Hanging on to Boyhood</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A look at youth culture at the far reaches of the Galápagos</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/farming-future">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/farming_thumb_1.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Farming the Future</div>
+           			<div class="sidebarBoxP" style="color: #555; ">As times change, a family embraces tourism</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/human-tide">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/humantide_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Human Tide</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Culture clashes with nature on the island of Santa Cruz</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/return-wild">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/return_wild_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Return to the Wild</div>
+           			<div class="sidebarBoxP" style="color: #555; ">o	Bringing tortoises back to the Galápagos </div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/offshore">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/offshore_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Offshore</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A fight to keep local funds at home</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/new-path">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/a_new_path_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: A New Path</div>
+           			<div class="sidebarBoxP" style="color: #555; ">Helping locals and tourists identify with nature</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/natures-keeper">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/natures_keeper_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Nature's Keeper</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A native Galapagoian finds his calling as a preservationist</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	<li>
+        	  <a href="http://reinhardt.jomc.unc.edu/en/highland-origins">
+        		<div class="gridItem">
+        		 
+        			<img src="./search_files/highland_origins_thumb.jpg" width="100%">
+                    <div class="sidebarBoxTitle">2009: Highland Origins</div>
+           			<div class="sidebarBoxP" style="color: #555; ">A local teacher discusses the past and present of his hometown</div>
+           	     
+        		</div>
+        	  </a>
+        	</li>
+        	
+        	
+        	
+        	
+        </ul>
+        </div>
+                        
+	</div>	<!-- ////END CONTAINER -->
+    
+        
+ <div id="footer"><!------------FOOTER AREA------------>    
+     
+     	<div id="footer-logo">
+         	<img src="./search_files/logo.png" width="250px" height="109px">
+         </div>
+
+     	<div id="footer-links">
+         	<div class="footerNav hide-on-phones">
+         	<ul>
+             
+         		<li><a href="http://reinhardt.jomc.unc.edu/search/#">FACEBOOK</a></li>
+          	<li><a href="http://reinhardt.jomc.unc.edu/search/#">TWITTER</a></li>
+          
+         		<li><a href="http://reinhardt.jomc.unc.edu/search/en/about/">ABOUT</a></li>
+          	<li><a href="http://reinhardt.jomc.unc.edu/en/search/">ENGLISH</a></li>
+          	<li><a href="http://reinhardt.jomc.unc.edu/es/search/">SPANISH</a></li>
+          
+          	<li style="border:none;"><a href="http://reinhardt.jomc.unc.edu/search/en">LIVING GALAPAGOS © 2012</a></li>
+                 
+             </ul>
+             </div>
+         </div>
+         
+ </div><!--////END FOOTER AREA-->
+
+
+
+
+
+	<!-- Included JS Files -->
+
+	<script src="./search_files/modernizr.foundation.js"></script>
+	<script src="./search_files/foundation.js"></script>
+	<script src="./search_files/app.js"></script>
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./search_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-34853305-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+
+</script>
+
+
+
+
+</body></html>

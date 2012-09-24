@@ -38,7 +38,7 @@ overflow:auto;
 
 .textHead {
 	font-family:qhytsdakx;
-	font-size: 4.3em;
+	font-size: 4.1em;
 	color: #29221c;
 	line-height: 1em;
 	
@@ -48,6 +48,7 @@ overflow:auto;
 	font-family:museo-sans-500;
 	font-size:1.1em;
 	color:#a9a8a6;
+	line-height:1.3em;
 	padding-bottom: .8em;
 }
 
@@ -58,9 +59,16 @@ overflow:auto;
 	line-height:1.7em;
 }
 
+.textP p{
+	font-family: museo-sans-300;
+	font-size:1.1em;
+	color: #29221c; 
+	line-height:1.7em;
+}
+
 .pullQuote {	
 	font-family:museo-sans-500;
-	font-size: 1.65em;
+	font-size: 1.4em;
 	color:#4fa7a9;
 	padding: .5em 0em;
 	text-align:center;
@@ -82,7 +90,7 @@ overflow:auto;
 	font-family: museo-sans-500;
 	font-size:1em;
 	color: #a9a8a6;	
-	line-height:1.3em;
+	line-height:1.2em;
 }
 
 /*related research*/
@@ -139,7 +147,7 @@ text-transform:uppercase;
 	font-size: 1em;
 	color:#F6F3EE;	
 	display: inline;
-	text-shadow: 2px 2px 2px #000;
+
 	text-transform:uppercase;
 }
 
@@ -212,7 +220,7 @@ float: left;
 }
 
 #toggleSearch {
-font-family:Caviar Dreams;
+	font-family:Caviar Dreams;
 
 	color:#fff;	
 }
@@ -223,11 +231,20 @@ font-family:Caviar Dreams;
 	color:#fff;	
 }
 #toggleSearch a:hover {text-decoration:underline;font-family:Caviar Dreams;
-
+	
 	color:#fff;	
 }
 
+#search_cat {
+	padding-left:6%;
+	width:15%
+}
 
+#filter_button{
+	text-transform:uppercase;
+	font-family:Caviar Dreams;
+	font-size:2em;
+}
 
 /*logo*/
 
