@@ -66,7 +66,7 @@
 <body>
 <div class="container"> <!-- container -->
 
-		<div class="row" id="header"> <!------------LOGO AND NAV------------>
+		<div class="row hide-on-phones" id="header"> <!------------LOGO AND NAV------------>
         	<div class="twelve columns phone-four">
             	<ul id="header-ul">
                 	<li id="logo-li">
@@ -88,6 +88,28 @@
                 </ul>
             </div>
         </div> <!-- ////END LOGO AND NAV -->
+        
+        
+	<!---phone top nav--->
+	
+	<div class="row show-on-phones">
+		<div class="phone-four" id="phoneLogo">
+			<a href="/en"><img src="http://reinhardt.jomc.unc.edu/static/images/logo.png"/></a>
+		
+		<div id="phoneTopNav">
+			<ul class="phoneULtop">
+				<li><a href="/en/not-home/">ENGLISH</a></li>
+                <li><a href="/es/not-home/">SPANISH</a></li>
+                <li><a href="#stories">STORIES</a></li>
+                <li><a href="/en/about/">ABOUT</a></li>
+                <li style="border:none;"><a href="http://livinggalapagos.org/blog">BLOG</a></li>  
+			</ul>
+		</div>
+		
+		</div>
+    </div>    
+        
+	<!---end phone top nav --->    
 
     	<div class="row" id="vidrow"><!-- video player row -->
         	<div class="twelve columns phone-four" id="video-row" style="z-index: 10;">
@@ -113,7 +135,7 @@
                              </div>
                			 </div> <!-- ////END ICON DIV -->
                          
-                    	<div class="row"> <!------------SIDEBAR DIV------------>
+                    	<div class="row hide-on-phones"> <!------------SIDEBAR DIV------------>
 
                 			<div id="sidebar-div">
                 			
@@ -227,40 +249,6 @@
 		
 		
 		
-		<!---phone nav--->
-		<div class="row">
-			<div class="twelve columns phone-four show-on-phones" id="phoneNav">
-				<div class="phoneNavCat">
-					<img src="http://reinhardt.jomc.unc.edu/static/images/icon-cat2.png"/>SEA
-				</div>
-				<div class="phoneNavStory">
-					<a href="/en/captain/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/05/08/captain_ab_still_13b.jpg" style="width:100%"/>
-					<p class="phoneNavTitle">
-						STORY TITLE
-					</p></a>
-				</div>
-				
-				<div class="phoneNavCat">
-					<img src="http://reinhardt.jomc.unc.edu/static/images/icon-cat1.png"/>LAND
-				</div>
-				<div class="phoneNavStory">
-					<a href="/en/captain/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/05/08/captain_ab_still_13b.jpg" style="width:100%"/>
-					<p class="phoneNavTitle">
-						STORY TITLE
-					</p></a>
-				</div>
-				<div class="phoneNavCat">
-					<img src="http://reinhardt.jomc.unc.edu/static/images/icon-search.png"/>SEARCH
-				</div>
-			
-				
-			</div>
-		</div>
-		<!---end phone nav--->
-		
-		
-		
-		
               
         <div class = "body-row row"> <!------------CONTENT AREA------------>
             
@@ -370,7 +358,36 @@ In the Galapagos, all three of them have struggled making new friends.
         </div><!-- ////END CONTENT/SIDEBAR ROW -->
         
         
-		
+<!---phone nav--->
+		<a name="stories"></a><div class="row">
+			<div class="twelve columns phone-four show-on-phones" id="phoneNav">
+				<div class="phoneNavCat">
+					<img src="http://reinhardt.jomc.unc.edu/static/images/icon-cat2.png"/>SEA
+				</div>
+				<div class="phoneNavStory">
+					<a href="/en/captain/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/05/08/captain_ab_still_13b.jpg" style="width:100%"/>
+					<p class="phoneNavTitle">
+						STORY TITLE
+					</p></a>
+				</div>
+				
+				<div class="phoneNavCat">
+					<img src="http://reinhardt.jomc.unc.edu/static/images/icon-cat1.png"/>LAND
+				</div>
+				<div class="phoneNavStory">
+					<a href="/en/captain/"><img src="http://reinhardt.jomc.unc.edu/media/uploads/video/thumbnails/2012/05/08/captain_ab_still_13b.jpg" style="width:100%"/>
+					<p class="phoneNavTitle">
+						STORY TITLE
+					</p></a>
+				</div>
+				<div class="phoneNavCat">
+					<img src="http://reinhardt.jomc.unc.edu/static/images/icon-search.png"/>SEARCH
+				</div>
+			
+				
+			</div>
+		</div>
+		<!---end phone nav--->		
 			
         <div class="body-row row hide-on-phones"> <!------------R-BAR------------>
             
@@ -390,8 +407,10 @@ In the Galapagos, all three of them have struggled making new friends.
             </div>
 
         	<div id="footer-links">
-        		<div class="footerNav hide-on-phones">
-            	<ul>
+    			
+        		<div class="footerNav ">
+        		<ul><li style="border:none;"><a href="#top">TOP&#8593;</a></li></ul>
+            	<ul class="hide-on-phones">
             		<li><a href="#">FACEBOOK</a></li>
 	            	<li><a href="#">TWITTER</a></li>
 	            
