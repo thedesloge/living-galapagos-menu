@@ -53,7 +53,7 @@ img.textimg {width: 92%; position: absolute; bottom: 0;}
 div.menu-img {position: relative; margin: 5%;}
 div.menu-hover {position: absolute; top: 0; bottom: 0; right: 0; left: 0; background-image:url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png"); display: none;}
 div.menu-hover p {color: #EAE5D7; font-family:museo-sans-500;font-size: 17px; position: absolute; top: 50%; left: 0; right: 0; text-align: center; margin-top: -8.5px;}
-div.menu-img img {max-width:100%; display: block;}
+div.menu-img img {width:100%; display: block;}
 .scrollbuffer { height: 27px; }
 #scroll-feat {font-family: museo-sans-300; font-size: 1.5em; color:#EAE5D7;line-height:1.5em;}
 #scroll-search {margin-top:17%; font-family:Caviar Dreams; font-size: 1.5em; color:#F6F3EE;line-height:1.5em;}
