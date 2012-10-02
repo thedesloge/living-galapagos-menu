@@ -35,7 +35,7 @@ body {
 #logo-li {margin-bottom: 0em; width: 21.68%; height: 203px; display: inline; background-size:30%; float: left;  }
 .logo-background{ position:absolute; width: 25.5%; height:100%; background-image:url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");}
 div.logo { max-width: 75%;}
-#top-nav-li {text-align: right; margin-bottom: 0px; margin-top: 135px; width:78.32%; float: left; display: inline; background-color: none;}
+#top-nav-li {text-align: right; margin-top: 135px; width:78.32%; float: left; display: inline; background-color: none;}
 #top-nav-li ul {}
 #top-nav-li ul li { list-style-type: none; display: inline; border-right: 1px solid #fff; padding:0 1em;}
 #top-cream-bar {text-align: right; margin-bottom: 0px; height: 40px; width:74.6%; float: right; display: inline; background-image: url(../images/content-top.png);background-repeat:repeat-x; background-color: #EAE5D7;}
@@ -210,12 +210,11 @@ background-image: url("http://reinhardt.jomc.unc.edu/static/images/nav_bg.png");
 	font-size:1.2em;
 	color:#d1c8b9;
 	width:100%;
-
 	margin-bottom:10px;
 	
 }
 
-.phoneNavStory img:hover{
+.phoneNavStory img{
 	width:100%;
 	font-family:museo-sans-500;
 	font-size:1.2em;
