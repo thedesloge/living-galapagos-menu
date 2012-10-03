@@ -37,7 +37,7 @@
 						$('.video-bg-controls').videobackground('resize');
 					});
 				});
-				$('body').prepend('<div class="video-background"></div>');
+				$('body').prepend('<div class="video-background hide-on-phones"></div>');
 				$('.video-background').videobackground({
 					videoSource: ['http://reinhardt.jomc.unc.edu/media/uploads/background-video/h264/fishes_noaudio_-_Computer.m4v',
 						'http://reinhardt.jomc.unc.edu/media/uploads/background-video/ogg/fishes_noaudio.ogv'], 
@@ -55,7 +55,7 @@
 <body><div class="video-background" style="height: 805px; "><video preload="none" poster="http://reinhardt.jomc.unc.edu/media/uploads/background-video/jpg/fish_bg.jpg" autoplay="autoplay" loop="loop"><source src="http://reinhardt.jomc.unc.edu/media/uploads/background-video/h264/fishes_noaudio_-_Computer.m4v"><source src="http://reinhardt.jomc.unc.edu/media/uploads/background-video/ogg/fishes_noaudio.ogv"></video><div class="ui-video-background ui-widget ui-widget-content ui-corner-all"><ul class="ui-video-background-controls"><li class="ui-video-background-play"><a class="ui-icon ui-icon-pause" href="http://reinhardt.jomc.unc.edu/search/#">Pause</a></li><li class="ui-video-background-mute"><a class="ui-icon ui-icon-volume-off" href="http://reinhardt.jomc.unc.edu/search/#">Unmute</a></li></ul></div></div>
 <div class="container"> <!-- container -->
     
-		
+<div class="show-on-phones" id="bg-fallback-stories"></div>		
 
 		<div class="row" id="header"> <!------------LOGO AND NAV------------>
         	<div class="twelve columns phone-four">

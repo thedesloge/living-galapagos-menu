@@ -48,7 +48,7 @@
 						$('.video-bg-controls').videobackground('resize');
 					});
 				});
-				$('body').prepend('<div class="video-background"></div>');
+				$('body').prepend('<div class="video-background hide-on-phones hide-on-tablets"></div>');
 				$('.video-background').videobackground({
 					videoSource: ['http://reinhardt.jomc.unc.edu/media/uploads/background-video/h264/bg3_-_iPhone.m4v',
 						'http://reinhardt.jomc.unc.edu/media/uploads/background-video/ogg/bg3_-_Computer.ogv'], 
@@ -64,6 +64,7 @@
 		</script>
 </head>
 <body>
+<div class="show-on-phones" id="bg-fallback-stories"></div>
 <div class="container"> <!-- container -->
 
 		<div class="row hide-on-phones" id="header"> <!------------LOGO AND NAV------------>

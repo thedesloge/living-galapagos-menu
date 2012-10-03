@@ -48,12 +48,12 @@
 						$('.video-bg-controls').videobackground('resize');
 					});
 				});
-				$('body').prepend('<div class="video-background"></div>');
+				$('body').prepend('<div class="video-background hide-on-phones hide-on-tablets"></div>');
 				$('.video-background').videobackground({
 					videoSource: ['http://reinhardt.jomc.unc.edu/media/uploads/background-video/h264/fishes_noaudio_-_Computer.m4v',
 						'http://reinhardt.jomc.unc.edu/media/uploads/background-video/ogg/fishes_noaudio.ogv'], 
 					controlPosition: '.video-background',
-					poster: 'http://reinhardt.jomc.unc.edu/media/uploads/background-video/jpg/fish_bg.jpg',
+					poster: 'http://reinhardt.jomc.unc.edu/media/uploads/background-video/jpg/BG_Pelican_Sunset.jpg',
 					loop: 'false', 
 					resize: 'true',
 					loadedCallback: function() {
@@ -73,6 +73,7 @@
 	
 </head>
 <body>
+<div class="show-on-phones" id="bg-fallback-home"></div>
 <div class="container"> <!-- container -->
 
 		<div class="row" id="header"> <!------------LOGO AND NAV------------>
