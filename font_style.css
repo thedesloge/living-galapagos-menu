@@ -68,7 +68,7 @@ overflow:auto;
 
 .pullQuote {	
 	font-family:museo-sans-500;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	color:#4fa7a9;
 	padding: .5em 0em;
 	text-align:center;
@@ -120,9 +120,7 @@ text-transform:uppercase;
 
 /*nav text*/
 
-.shadow {
-	text-shadow: 2px 2px 2px #000;
-}
+
 
 .topNav, .topNav a, .topNav a:hover, .topNav a:focus{
 	font-family:Caviar Dreams;
@@ -168,7 +166,7 @@ text-transform:uppercase;
 #filterStories h1 {
 	font-family:Caviar Dreams;
 	font-size:1.4em;
-	color:#fff;
+	color:#f6f3ee;
 	font-weight:normal;
 	line-height:.8em;
 }
@@ -176,7 +174,7 @@ text-transform:uppercase;
 #filterStories h2 {
 	font-family:museo-sans-300;
 	font-size: 1em;
-	color:#fff;
+	color:#f6f3ee;
 	font-weight:normal;
 	line-height:1.3em;
 	margin-top:1em;
@@ -185,7 +183,6 @@ text-transform:uppercase;
 #filterStories h3 {
 	font-family:museo-sans-500;
 	font-size: 1.2em;
-
 	color:#F6F3EE;
 	font-weight:normal;
 	line-height:1.2em;
